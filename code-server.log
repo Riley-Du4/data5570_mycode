@@ -1,42 +1,25 @@
-[2025-01-10T21:40:14.128Z] info  code-server 4.96.2 08cbdfbdf11925e8a14ee03de97b942bba7e8a94
-[2025-01-10T21:40:14.145Z] info  Using user-data-dir /root/.local/share/code-server
-[2025-01-10T21:40:14.218Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
-[2025-01-10T21:40:14.218Z] info  HTTPS server listening on https://0.0.0.0/
-[2025-01-10T21:40:14.218Z] info    - Authentication is enabled
-[2025-01-10T21:40:14.218Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
-[2025-01-10T21:40:14.218Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
-[2025-01-10T21:40:14.218Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
-[21:40:30] 
+[2025-02-07T01:41:51.659Z] info  code-server 4.96.2 08cbdfbdf11925e8a14ee03de97b942bba7e8a94
+[2025-02-07T01:41:51.677Z] info  Using user-data-dir /root/.local/share/code-server
+[2025-02-07T01:41:51.749Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-02-07T01:41:51.750Z] info  HTTPS server listening on https://0.0.0.0/
+[2025-02-07T01:41:51.750Z] info    - Authentication is enabled
+[2025-02-07T01:41:51.750Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-02-07T01:41:51.750Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
+[2025-02-07T01:41:51.750Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
+[01:42:09] 
 
 
 
 
-[21:40:31] Extension host agent started.
+[01:42:10] Extension host agent started.
 File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
 File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
-[21:40:42] [<unknown>][27cd5648][ManagementConnection] New connection established.
-[21:40:44] [<unknown>][bc2c58b9][ExtensionHostConnection] New connection established.
-[21:40:45] [<unknown>][bc2c58b9][ExtensionHostConnection] <2325> Launched Extension Host Process.
-[21:40:49] Getting Manifest... ms-python.python
-[21:40:50] Installing extension: ms-python.python {
-  productVersion: { version: '1.96.2', date: '2024-12-19T21:23:46.441Z' },
-  pinned: false,
-  operation: 3,
-  isApplicationScoped: false,
-  installOnlyNewlyAddedFromExtensionPack: true,
-  profileLocation: wr {
-    scheme: 'file',
-    authority: '',
-    path: '/root/.local/share/code-server/extensions/extensions.json',
-    query: '',
-    fragment: '',
-    _formatted: 'file:///root/.local/share/code-server/extensions/extensions.json',
-    _fsPath: '/root/.local/share/code-server/extensions/extensions.json'
-  }
-}
-[21:40:54] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /var/app/code-server/lib/vscode/out/server-main.js
-[21:40:54] Extension signature verification is not done: ms-python.python
-[21:40:58] Extracted extension to file:///root/.local/share/code-server/extensions/ms-python.python-2024.23.0-dev-universal: ms-python.python
-[21:40:58] Renamed to /root/.local/share/code-server/extensions/ms-python.python-2024.23.0-dev-universal
-[21:40:58] Marked extension as uninstalled ms-python.python-2024.22.1-universal
-[21:40:58] Extension installed successfully: ms-python.python file:///root/.local/share/code-server/extensions/extensions.json
+[01:42:19] [<unknown>][8f13b606][ManagementConnection] New connection established.
+[01:42:22] [<unknown>][711b8644][ExtensionHostConnection] New connection established.
+[01:42:22] [<unknown>][711b8644][ExtensionHostConnection] <2325> Launched Extension Host Process.
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///var/app/code-server/lib/vscode/out/server-main.js:207:7980)
+    at process.emit (node:events:530:35)
+[01:42:22] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///var/app/code-server/lib/vscode/out/server-main.js:188:1327)
+    at process.emit (node:events:530:35)

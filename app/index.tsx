@@ -1,16 +1,23 @@
 // src/components/Index.js
 import React from "react";
 import { View, Text, TextInput, Button, Alert } from "react-native";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { addFormData } from "../state/store";  // adjust path as necessary
+import { setFormData } from "../state/userSlice";  // adjust path as necessary
 import { useRouter } from 'expo-router';
 
+type FormValues = {
+  first_name: string;
+  last_name: string;
+  email: string;
+  phone_number: string;
+
+}
 const router = useRouter();
 
 const Index = () => {
   const dispatch = useDispatch();
-  const { control, handleSubmit, reset } = useForm({
+  const { control, handleSubmit, reset } = useForm<FormValues>({
     defaultValues: {
       first_name: "",
       last_name: "",
@@ -19,11 +26,11 @@ const Index = () => {
     },
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: FormValues) => {
     console.log("Form Data:", data);
 
     // Dispatch form data to Redux store
-    dispatch(addFormData(data));
+    dispatch(setFormData(data));
 
     Alert.alert("Success", "Form submitted!");
     reset();

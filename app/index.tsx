@@ -1,18 +1,17 @@
-// src/components/Index.js
+// src/components/Index.js (updated)
 import React from "react";
 import { View, Text, TextInput, Button, Alert } from "react-native";
-import { useForm, Controller, SubmitHandler } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { setFormData } from "../state/userSlice";  // adjust path as necessary
-import { useRouter } from 'expo-router';
-
+import { setFormData } from "../state/userSlice"; 
+import { useRouter } from "expo-router";
 type FormValues = {
   first_name: string;
   last_name: string;
   email: string;
   phone_number: string;
+};
 
-}
 const router = useRouter();
 
 const Index = () => {
@@ -37,7 +36,7 @@ const Index = () => {
   };
 
   const navigateTostate = () => {
-    router.push('./state/')
+    router.push("./state/");
   };
 
   return (

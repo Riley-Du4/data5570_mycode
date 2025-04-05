@@ -12,7 +12,7 @@ const StateComponent = () => {
       />
       {isVisible && (
         <Image
-          source={require("../../assets/images/react-logo.png")}
+          source={require("@/assets/images/react-logo.png")}
           style={styles.image}
         />
       )}
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ToggleImage;
+export default StateComponent; // ✅ Corrected the export
